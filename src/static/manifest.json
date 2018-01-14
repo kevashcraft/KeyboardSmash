@@ -8,5 +8,6 @@
       "scripts": ["background.js"]
     }
   },
+  "permissions": ["alwaysOnTopWindows"],
   "icons": { "16": "abc-16.png", "128": "abc-128.png" }
 }

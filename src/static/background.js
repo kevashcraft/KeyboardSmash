@@ -4,15 +4,10 @@
 
 /* global chrome, screen */
 
-var screenWidth = screen.availWidth
-var screenHeight = screen.availHeight
-
 chrome.app.runtime.onLaunched.addListener(function () {
   chrome.app.window.create('index.html', {
     id: 'keyboardSmash',
-    'outerBounds': {
-      'width': screenWidth,
-      'height': screenHeight
-    }
-  })
+    state: 'fullscreen',
+    alwaysOnTop: true
+  }, function() { console.log('New window created')})
 })
