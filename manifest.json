@@ -1,0 +1,12 @@
+{
+  "name": "Keyboard Smash!",
+  "description": "A kids first typing program, smash the keyboard to hear the alphabet.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "16": "abc-16.png", "128": "abc-128.png" }
+}
