@@ -1,23 +1,9 @@
+// fullscreen the window
+chrome.app.window.current().fullscreen()
 
-hideLoadingNotice()
-helloWorld()
-fullscreen()
+let audio = document.createElement('audio')
+audio.id = 'audio'
+audio.src = '/abc.mp3'
+audio.currentTime = 9.5
 
-var app
-
-var colors = [
-]
-
-function helloWorld () {
-  app = document.getElementById('app')
-  app.innerHTML = 'Hello world!!'
-}
-
-function hideLoadingNotice () {
-  var loadingNotice = document.getElementById('loading-notice')
-  loadingNotice.style.display = 'none'
-}
-
-function fullscreen () {
-  chrome.app.window.current().fullscreen()
-}
+document.getElementById('app').appendChild(audio)
